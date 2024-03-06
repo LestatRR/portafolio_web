@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Practica 1</title>
+</head>
+<body>
+    <header>
+      <center><h1>Venta en linea</h1></br></center> 
+    </header>
+    <form method="post" enctype="text/plain">
+        <center><section>
+        <fieldset>
+        <legend>Informacion general</legend>
+        <table>
+
+        <label for="nom" align="left">Nombre:</label>
+            <input type="text" name="nom" id="nom" size="10" maxlength="20" title="Nombre"
+            placeholder="Nombre" lign="left">
+
+        <label for="app" align="center">Apellido paterno:</label>
+        <input type="text" name="app" id="app" size="10" maxlength="20" title="app"
+       placeholder="app" align="center">   
+
+       <label for="apm" align="right">Apellido Materno:</label>
+       <input type="text" name="apm" id="apm" size="10" maxlength="20" title="apm"
+      placeholder="apm" align="right"></br></br>     
+      
+      <label for="usuario" align="left">Nombre de usuario:</label>
+      <input type="text" name="usuario" id="usuario" size="10" maxlength="20" title="Nombre usuario"
+      placeholder="Nombre del usuario" lign="left"> 
+      
+      <label for="pass" align="center">Contraseña</label>
+      <input type="password" name="pass" id="pass" align="center">      
+
+      <label for="fechan" align="right">Fecha de nacimiento</label>
+      <input type="date" name="fechan" id="fechan" align="right">
+
+        </fieldset>
+    </section></center> 
+
+   <center><section>
+        <fieldset>
+        <legend>Datos de facturacion</legend>
+        <label for="country" align="left">Pais</label>
+        <select name="pais" id="country" size="4" align="left">
+            <option value="Mexico">MEXICO</option>
+            <option value="EUA">EUA</option>    
+            <option value="CANADA">CANADA</option>
+            <option value="JAPAN">JAPAN</option>
+        </select>
+
+        <label for="ciudad" align="center">Ciudad</label>
+        <select name="ciudad" id="ciudad" size="5" align="center">
+            <option value="slp">San luis potosi</option>
+            <option value="tokyo">tokyo</option>    
+            <option value="kansas">kansas</option>
+            <option value="florida">florida</option>
+            <option value="oaxaca">Oaxaca</option>
+        </select>
+
+        <label for="calle" align="right">Calle:</label>
+       <input type="text" name="calle" id="calle" size="10" maxlength="20" title="calle"
+      placeholder="calle" align="right"></br></br>    
+      
+      <label for="Num casa" align="left">Numero de casa:</label>
+      <input type="number" name="Num casa" id="Num casa" size="10" maxlength="20" title="Num casa"
+     placeholder="Num casa" align="left">      
+
+     <label for="Colonia" align="center">Colonia:</label>
+     <input type="text" name="Colonia" id="Colonia" size="10" maxlength="20" title="Colonia"
+    placeholder="Colonia" align="center"> 
+
+    <label for="mail" align="right">E-mail:</label>
+    <input type="E-mail" name="mail" id="mail" size="10" maxlength="20" title="mail"
+   placeholder="mail" align="right"></br></br>    
+
+    <label for="rfc" align="left">R.F.C:</label>
+    <input type="rfc" name="rfc" id="rfc" size="10" maxlength="20" title="rfc"
+    placeholder="rfc" align="left"> 
+
+   <label for="codigopost" align="center">C.P:</label>
+   <input type="number" name="codigopost" id="codigopost" size="10" maxlength="20" title="codigopost"
+   placeholder="codigopost" align="center">   
+
+   <input type="submit" name="enviar" id="enviar" align="right">
+
+   <input type="reset" name="enviar" id="enviar" align="right">
+
+        </fieldset>
+    </section></center>     
+
+</form>
+</body>
+</html>
