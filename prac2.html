@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+	<title> Practica 2 Javascript</title>
+	<link rel="stylesheet" type="text/css" href="st.css">
+	<script>
+        function genera_rfc() {
+ 
+            var nombre = document.getElementById('nombre').value.trim().toUpperCase();
+            var apellidoPaterno = document.getElementById('ap').value.trim().toUpperCase();
+            var apellidoMaterno = document.getElementById('am').value.trim().toUpperCase();
+            var anio = document.getElementById('anio').value.trim();
+            var mes = document.getElementById('mes').value.trim();
+            var dia = document.getElementById('dia').value.trim();
+
+            var primerasDosLetrasApellido = apellidoPaterno.substr(0, 2);
+
+            var primeraLetraApellidoMaterno = apellidoMaterno.charAt(0);
+
+            var primeraLetraNombre = nombre.charAt(0);
+
+            var rfc = primerasDosLetrasApellido + primeraLetraApellidoMaterno + primeraLetraNombre + anio.slice(2)+ mes + dia;
+
+            document.getElementById('resultado').value = rfc;
+        }
+    </script>
+</head>
+<body>
+	<form name="formu" id="formu">
+		<label for="cadena">Escribe tu nombre</label><br/>
+		<input type="text" id="nombre" name="nombre" ><br/>
+		<label for="cadena2">Escribe tu apellido paterno</label><br/>
+		<input type="text" id="ap" name="ap" ><br/>
+		<label for="cadena2">Escribe tu apellido materno</label><br/>
+		<input type="text" id="am" name="am" ><br/>
+		<label for="cadena2">Escribe tu año de nacimiento</label><br/>
+		<input type="text" id="anio" name="anio" ><br/>
+		<label for="cadena2">Escribe tu mes de nacimiento</label><br/>
+		<input type="text" id="mes" name="mes" ><br/>
+		<label for="cadena2">Escribe tu dia de nacimiento</label><br/>
+		<input type="text" id="dia" name="dia" ><br/>
+		<label for="resultado">Resultado</label><br/>
+		<input type="text" id="resultado" name="resultado" ><br/>
+	</form>
+	<br/>
+		<input type="submit" id="boton" value="Generar el RFC" onclick="genera_rfc()" >
+</body>
+</html>
