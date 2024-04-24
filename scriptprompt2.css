@@ -1,0 +1,22 @@
+#principal{
+	margin: auto;
+	background-color: hotpink;
+	color:black;
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+input{
+	color: white;
+	background-color: hotpink;
+	text-align: center;
+	border-style: none;	
+}
+
+
+p{
+	margin: auto;
+	font-size: 15px;
+	font-style: arial;
+}
