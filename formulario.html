@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script>
+        function enviarCorreo() {
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("email").value;
+            var mensaje = document.getElementById("mensaje").value;
+            
+            var destinatario = "184195@upslp.edu.mx";
+            var asunto = "Mensaje de contacto";
+            var cuerpo = "Nombre: " + nombre + "\nEmail: " + email + "\nMensaje: " + mensaje;
+
+            var correo = "mailto:" + destinatario + "?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(cuerpo);
+
+            document.forms["formulario"].action = correo;
+            document.forms["formulario"].submit();
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h2>Contacto</h2>
+    </center>
+    <form name="formulario" method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

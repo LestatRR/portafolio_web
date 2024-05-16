@@ -1,0 +1,26 @@
+
+body{
+	background:linear-gradient(hotpink,violet);
+}
+
+
+h2{
+    font-family: Arial, sans-serif;
+    color:white;
+
+}
+label{
+	padding: 10px;	
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+
+}
+
+
+button{
+	background-color: lightblue;
+	color:white;
+	border-color:violet;
+	border-radius: 10px;
+}
